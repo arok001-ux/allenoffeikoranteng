@@ -704,6 +704,29 @@ h3 {
   line-height: 1.4;
 }
 
+.reflection-photo {
+  max-width: 900px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.reflection-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.reflection-photo figcaption {
+  padding: 14px 16px;
+  color: var(--quiet-ink);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
