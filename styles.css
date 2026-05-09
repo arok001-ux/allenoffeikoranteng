@@ -220,6 +220,24 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.home-photo-card {
+  margin: 0;
+}
+
+.home-photo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 22%;
+}
+
+.home-photo-card figcaption {
+  margin-top: 12px;
+  color: var(--muted-ink);
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
 .circuit-visual {
   position: relative;
   min-height: 430px;
