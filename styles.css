@@ -586,6 +586,39 @@ h3 {
   font-weight: 600;
 }
 
+.project-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0 4px;
+}
+
+.project-video {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--deep);
+}
+
+.project-video video,
+.project-video iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--deep);
+}
+
+.project-video figcaption {
+  padding: 10px 12px;
+  color: var(--quiet-ink);
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -727,6 +760,10 @@ main > section {
 }
 
 @media (max-width: 820px) {
+  .project-media-grid {
+    grid-template-columns: 1fr;
+  }
+
   .brand span:last-child {
     white-space: normal;
   }
